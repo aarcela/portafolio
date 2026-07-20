@@ -1,11 +1,13 @@
 "use client";
 
 import { useLocale } from "@/context/LocaleContext";
+import { withBasePath } from "@/lib/site";
 
 export function Header() {
   const { locale, setLocale, t } = useLocale();
-  const cvHref =
-    locale === "es" ? "/Andres_Arcela_CV_ES.pdf" : "/Andres_Arcela_CV_EN.pdf";
+  const cvHref = withBasePath(
+    locale === "es" ? "/Andres_Arcela_CV_ES.pdf" : "/Andres_Arcela_CV_EN.pdf",
+  );
   const cvName =
     locale === "es" ? "Andres_Arcela_CV_ES.pdf" : "Andres_Arcela_CV_EN.pdf";
 

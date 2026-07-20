@@ -19,21 +19,17 @@ export function Work() {
               <span className="work-role">{item.role}</span>
             </div>
             <div className="work-body">
-              {item.href ? (
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="work-title"
-                >
-                  {item.name}
-                  <span className="work-arrow" aria-hidden>
-                    ↗
-                  </span>
-                </a>
-              ) : (
-                <h3 className="work-title">{item.name}</h3>
-              )}
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="work-title"
+              >
+                {item.name}
+                <span className="work-arrow" aria-hidden>
+                  ↗
+                </span>
+              </a>
               <p>{item.description}</p>
               <ul className="tag-list">
                 {item.tags.map((tag) => (

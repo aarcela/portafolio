@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Source_Sans_3 } from "next/font/google";
 import { LocaleProvider } from "@/context/LocaleContext";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const display = Bricolage_Grotesque({
@@ -15,9 +16,7 @@ const body = Source_Sans_3({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://andresarcela.com";
+const siteUrl = SITE_URL;
 
 const title = "Andres Arcela — Senior Full Stack & Mobile Engineer";
 const description =
