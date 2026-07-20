@@ -1,5 +1,5 @@
-/** GitHub repo name — used as Pages base path: aarcela.github.io/portfolio */
-export const REPO_NAME = "portfolio";
+/** GitHub repo name — used as Pages base path: aarcela.github.io/portafolio */
+export const REPO_NAME = "portafolio";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??

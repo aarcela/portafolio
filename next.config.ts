@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repo = "portfolio";
+/** Must match the GitHub repository name */
+const repo = "portafolio";
 const basePath = isGithubPages ? `/${repo}` : "";
 
 const nextConfig: NextConfig = {
